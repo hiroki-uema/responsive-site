@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+.txt-center {
+  text-align: center; }
+
+.bg-glay {
+  background-color: Gray; }
+
+.space {
+  padding: 2% 0;
+  margin: 2% 0; }
+
+.center {
+  displat: table;
+  margin: 0 auto; }
+
+.top-image {
+  width: 100vw;
+  height: 250px; }
+
+#top-img-b {
+  background-image: url("../images/top-image-light.jpg");
+  height: 250px;
+  width: 100%;
+  background-color: blue;
+  background-size: cover;
+  background-position: center center; }
+
+#title {
+  width: 70%;
+  margin: 20px;
+  padding: 2vw;
+  color: Orange;
+  font-size: 7vw;
+  background-color: ForestGreen;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+section {
+  margin: 0 auto;
+  width: 80%; }
+
+.box1 {
+  background-color: Gray; }
+
+.box-title {
+  text-align: center;
+  font-size: 125%;
+  padding: 1% 1% 2%;
+  background-color: LightGrey; }
+
+.box-p {
+  padding: 2% 1% 1%;
+  color: Orange;
+  margin-bottom: 1%; }
+
+.list {
+  list-style: disc;
+  padding-left: 10%; }
+
+footer {
+  margin-top: 5%;
+  width: 100%;
+  background-color: LightGrey; }
+
+.last-this {
+  background-color: Glay;
+  display: table;
+  margin: auto;
+  padding: 1%; }
+
+.b-center {
+  width: 50%;
+  background-color: Gray;
+  text-align: center;
+  margin: 0 auto; }
+
+.button {
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 250%;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1; }
+
+@media (min-width: 769px) {
+  .top-image {
+    width: 100vw;
+    height: 500px; }
+
+  #top-img-b {
+    background-image: url("../images/top-image-light.jpg");
+    height: 500px;
+    width: 100%;
+    background-color: blue;
+    background-size: cover;
+    background-position: center center; }
+
+  #threedata .container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-around; }
+  #threedata .box1 {
+    width: 33%; }
+
+  .button:hover {
+    border-style: dashed; } }
+
+/*# sourceMappingURL=style.css.map */

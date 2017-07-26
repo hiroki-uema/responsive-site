@@ -1,5 +1,6 @@
 @import "compass";
 @import url(https://fonts.googleapis.com/css?family=Abel);
+@import "compass/utilities/general/clearfix";
 // font-family
 $baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
@@ -9,12 +10,189 @@ $subColor: #bea300;
 $keyColor: #14c0c9;
 $fontColor: #4c4c4c;
 
+//body
+//-------------------------------
+//-------------------------------
 
+
+//汎用
+//-------------------------------
+.txt-center{
+  text-align:center;
+}
+
+.bg-glay{
+  background-color:Gray;
+}
+
+.space{
+  padding:2% 0;
+  margin:2% 0;
+}
+
+.center{
+  displat:table;
+  margin:0 auto;
+}
+
+
+
+
+//<header>
+//----------------------------
 .top-image{
-  height:500px;
-  width:100%;
+  width:100vw;
+  height:250px;
+}
+
+#top-img-b{
+  background-image: url("../images/top-image-light.jpg");
+  height: 250px;
+  width: 100%;
+  background-color:blue;
+  background-size: cover;
+  background-position: center center;
+  //transform: scale(1, -1);
+}
+
+//<main>
+//----------------------------
+#title{
+  width:70%;
+  //height:15vw;
+  margin:20px;
+  padding:2vw;
+  color:Orange;
+  font-size:7vw;
+  background-color:ForestGreen;
+  text-align:center;
+  margin: 0 auto;
+  margin-top:10px;
+  //padding-top:5vw;
+}
+
+section {
+  margin:0 auto;
+  width:80%;
+  //padding: 10px;
+  &#threedata{
+    //font-size:300%;
+    //color:red;
+  }
+}
+
+.box1{
+  background-color:Gray;
   
 }
 
+.box-title{
+  text-align:center;
+  font-size:125%;
+  padding:1% 1% 2%;
+  background-color:LightGrey;
+}
+
+.box-p{
+  padding:2% 1% 1%;
+  color:Orange;
+  margin-bottom:1%;
+}
+
+.list{
+  list-style:disc;
+  padding-left:10%;
+}
+
+
+
+//footer周り ボタンとか
+//------------------------------
+//------------------------------
+
+footer{
+  margin-top:5%;
+  width:100%;
+  background-color:LightGrey;
+//  position:absolute;
+//  bottom:0;
+}
+
+
+
+.last-this{
+  background-color:Glay;
+  display:table;
+  margin:auto;
+  padding:1%;
+}
+
+.b-center{
+  width:50%;
+  background-color:Gray;
+  text-align:center;
+  margin:0 auto;
+}
+
+
+.button {
+  background-color: #fff;
+  border: 2px solid #333;
+  color: #333;
+  line-height: 250%;
+  //line-height:90%;
+  display:block;
+  width:50%;
+  margin:0 auto;
+  border-radius:20px;
+}
+
+
+//footer下付けセット
+html{
+  height:100%;
+}
+body{
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+}
+main{
+  flex:1;
+}
+
+//--------------------------------------
 // desktop
+//--------------------------------------
+//--------------------------------------
 @media (min-width: 769px) {
+  .top-image{
+    width:100vw;
+    height:500px;
+  }
+  #top-img-b{
+    background-image: url("../images/top-image-light.jpg");
+    height: 500px;
+    width: 100%;
+    background-color:blue;
+    background-size: cover;
+    background-position: center center;
+    //transform: scale(1, -1);
+  }
+  #threedata{
+  //background-color:red;
+    .container{
+      @include display-flex;
+      @include flex-direction(row);     // スキルボックスを横に並べる
+      justify-content: space-around;
+    }
+    .box1 {
+      //margin: 0 10px;                   // 左右にマージン
+      width:33%;
+    }
+  }
+  .button:hover {
+  border-style: dashed;
+  }
+
+}
